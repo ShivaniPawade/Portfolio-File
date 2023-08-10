@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3439f4124c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Port<span>folio.</span></h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm<br> <span>Shivani</span> Pawade <br>from india.</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- --------------------  about  ------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-1"> 
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="color: #ababab;">I am a front-end Web developer. I can provide clean and pixel perfect design. I also make the website more & more interactive with web animations. A responsive design makes your website accesible to all the users, regardless of their devices.
+                    I have made many websites through using Html, Css and Javascript.</p>
+                    <div class="tab-titles">
+                        <p div class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p div class="tab-links" onclick="opentab('education')">Education</p>
+                        <p div class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div> 
+                    <div class="tab-contents active-tab"id="skills">
+                        <ul>
+                            <li><span>Html/Css/Javascript</span><br>Built simple web pages using HTML, CSS & JS.</li>
+                            <li><span>Java</span><br>It is a multiplatform, Object Oriented and secure Programing Language.
+                            </li>
+                            <li><span>Azure Fundamental</span><br>It explains the cloud concept and azure Fundamental.
+                            </li>
+                            <li><span>Sql</span><br>The purpose of database to store and retrieve information.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>B.E from P.B.C.O.E. Nagpur</li>
+                            <li><span>2017-2019</span><br>HSC from A.N.C. Warora</li>
+                            <li><span>2016-2017</span><br>SSC from St. Anne's High School, Warora.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>AZ-900</span><br>Certified in Azure Fundamental (Az-900). </li>
+                            <li><span>Tcs ion</span><br>Completed certification on TCS ion carrier edge Young Professional.</li>
+                            <li><span>Research Paper</span><br>Published Research Paper on Title “ Chat-Bot For Blind Students “.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+ <!-- --------------------  portfolio --------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>GYM Website</h3>
+                    <p>Currentlyworking on the project of creating dynamic gym website 
+                        where user will get full details about gym.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div> 
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>ChatBot Application</h3>
+                    <p>The purpose of these android application is to provide educational 
+                        based Chat-Bot for Visually impaired students.                        
+                    </p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div> 
+                
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>Created a clone spotify to enjoy favorite songs from my playlist.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div> 
+                
+            </div>
+        </div>
+        <a href="" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ---------- contact ---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>shivani.pawade121@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>8668228430</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/my cv.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="5" placeholder="Your message"></textarea>
+                    <button type="submit"class="btn btn1">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            <p>copyright @ shivani made by shivani pawade.</p>
+        </div>
+    </div>
+</div>
+        
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwIPO3mtRWoq8j4OUXOXrJC6RGrAHb_avVw9uqpp6BI5aMW-FQOCyo6xof5UW2jknLk/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
